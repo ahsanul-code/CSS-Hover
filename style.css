@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(75deg, #F4D03F 0%, #16A085 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: -1px 2px 29px -3px yellow;
+    background-color: white;
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.social-icons a .fab{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 1;  
+}
+.social-icons a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    transition: 0.5s;
+}
+.social-icons a:hover::after{
+    top: 0;   
+}
+.social-icons a:hover{
+    transform:translateY(-10px);
+}
+
+.social-icons a:nth-child(1){
+    color: #1877F2
+}
+.social-icons a:nth-child(2){
+    color: #CD201F
+}
+.social-icons a:nth-child(3){
+    color: #1DA1F2
+}
+.social-icons a:nth-child(4){
+    color: #0A66C2
+}
+.social-icons a:nth-child(5){
+    color: #E4405F
+} 
+
